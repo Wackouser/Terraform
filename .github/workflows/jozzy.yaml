@@ -1,21 +1,21 @@
 name: Terraform AWS
 
 on: 
-    Push: 
+   Push: 
         branches: [ "main", "development" ]
     pull_request: 
         branches: [ "main", "development" ]
 
 jobs: 
   terraform:
-    runs-on: ubuntu-lastest
-    steps:
-       - name: Checkout Repo
-         uses: actions/checkout@v4
+     runs-on: ubuntu-lastest
+     steps:
+        - name: Checkout Repo
+          uses: actions/checkout@v4
 
-       - name: Configure AWS credentials
-         uses: aws-actions/configure-aws-credentials@v4
-         with: 
+        - name: Configure AWS credentials
+          uses: aws-actions/configure-aws-credentials@v4
+          with: 
             aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
             aws-secret-access-key: ${{ secrets.AWS_SECRETS_ACCESS_KEY }}
             aws-region: sa-east-1
