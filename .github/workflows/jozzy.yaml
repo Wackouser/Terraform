@@ -7,6 +7,7 @@ on:
         branches: [ "main", "development" ]
 
 jobs: 
+  terraform:
     runs-on: ubuntu-lastest
     steps:
        - name: Checkout Repo
