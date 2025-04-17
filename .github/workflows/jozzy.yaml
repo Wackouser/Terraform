@@ -3,12 +3,12 @@ name: Terraform AWS
 on: 
    Push: 
         branches: [ "main", "development" ]
-    pull_request: 
+   pull_request: 
         branches: [ "main", "development" ]
 
 jobs: 
   terraform:
-     runs-on: ubuntu-lastest
+     runs-on: ubuntu-latest
      steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
