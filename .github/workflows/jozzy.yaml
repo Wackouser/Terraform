@@ -8,8 +8,8 @@ on:
 
 jobs: 
   terraform:
-     runs-on: ubuntu-latest
-     steps:
+   runs-on: ubuntu-latest
+   steps:
         - name: Checkout Repo
           uses: actions/checkout@v4
 
